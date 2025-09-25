@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Rohan" />
+    <meta name="description" content="Our Services at Striped Umbrella" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Services - Striped Umbrella</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="assets/images/su_banner.gif" alt="Striped Umbrella Banner" />
+
+        <nav id="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="content">
+        <h2>Contact Us:</h2>
+        <form action="submit.php" method="post">
+          <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="firstName">First Name:*</label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              required
+              maxlength="25"
+            /><br /><br />
+
+            <label for="lastName">Last Name:*</label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              required
+              maxlength="25"
+            /><br /><br />
+
+            <label for="email">Email:*</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              maxlength="35"
+            /><br /><br />
+
+            <label for="cuisine"
+              >Please select the cuisine(s) that you enjoy:</label
+            ><br /><br />
+
+            <input
+              type="checkbox"
+              id="italian"
+              name="cuisine"
+              value="Italian"
+            />
+            <label for="italian">Italian</label><br />
+
+            <input type="checkbox" id="indian" name="cuisine" value="Indian" />
+            <label for="indian">Indian</label><br />
+
+            <input type="checkbox" id="chinese" name="cuisine" value="Chinese" />
+            <label for="chinese">Chinese</label><br />
+
+            <input type="checkbox" id="mexican" name="cuisine" value="Mexican" />
+            <label for="mexican">Mexican</label><br />
+
+            <input type="checkbox" id="japanese" name="cuisine" value="Japanese" />
+            <label for="japanese">Japanese</label><br />
+          </fieldset>
+
+          <fieldset>
+            <legend>Your Message</legend>
+            <label for="referral">How did you hear about us?</label>
+            <select name="referral" id="referral">
+              <option value="website">Our Website</option>
+              <option value="friends">Friends</option>
+              <option value="tv">TV Adv.</option>
+              <option value="other">Other</option>
+            </select>
+            <br />
+            <label for="">Would you recommend us to your friends?</label>
+            <input type="radio" id="yes" name="recommend" value="yes" />
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="recommend" value="no" />
+            <label for="no">No</label>
+            <input type="radio" id="maybe" name="recommend" value="maybe" />
+            <label for="maybe">Maybe</label><br /><br />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Your message here..."
+            ></textarea
+            ><br /><br />
+            <input type="submit" value="Submit" />
+
+            <input type="checkbox" id="updates" checked />
+            <label for="updates">Sign me up for email updates</label>
+          </fieldset>
+        </form>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.8658109335156!2d-79.39233542372168!3d43.671760551230115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2e0b64e1140d%3A0xd11156503e310196!2sSpa%20at%20Four%20Seasons%20Toronto!5e0!3m2!1sen!2sca!4v1758835104697!5m2!1sen!2sca"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </main>
+
+      <footer>
+        Copyright © 2023 ILAC and EFREI Paris – HTML-CSS major lab-work -
+        created by: Jas - All rights reserved
+      </footer>
+    </div>
+  </body>
+</html>
