@@ -1,0 +1,127 @@
+/* Reset margins */
+* { margin: 0; }
+
+/* HTML5 elements as blocks */
+header, nav, section, article, aside, footer, main, figure, figcaption { display: block; }
+
+/* Body styles */
+body {
+  color: #e6e6e6;                      /* text */
+  background-image: url("../assets/images/dark-wood2.jpg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: auto;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  margin: 0;
+}
+
+/* Page container */
+.container {
+  width: 950px;
+  margin: 5px auto;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+/* Content block */
+.content {
+  line-height: 1.4em;
+  padding: 10px;
+}
+
+/* Header/Nav/Footer theme */
+header, nav, footer {
+  background-color: rgba(20, 20, 20, 0.9);
+  color: #f0f0f0;
+}
+
+/* Nav list */
+nav > ul { margin: 0; padding: 5px; }
+
+/* Nav items */
+nav li {
+  display: inline-block;
+  margin-right: 40px;
+  text-transform: uppercase;
+}
+
+/* Nav link states */
+nav a:link { color: #b3c7ff; }
+nav a:visited { color: #99a6cc; }
+nav a:hover { color: #ffffff; }
+nav a:active { color: #ffd580; }
+
+/* Global links */
+a { color: #a0d4ff; text-decoration: none; }
+
+/* Headings */
+h1, h2, h3 { margin: 10px; text-transform: uppercase; color: #ffe28c; }
+
+/* Centered image */
+.img-centre { display: block; margin: 5px auto; padding: 2px; }
+
+/* Media blocks */
+audio, video { display: block; margin: 10px auto; }
+
+/* Tables */
+table {
+  width: 800px;
+  margin: 10px auto;
+  border-collapse: collapse;
+}
+
+/* Table cells */
+td, th {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 2px 5px;
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+/* Table headers/footers */
+th, tfoot td {
+  text-transform: uppercase;
+  background-color: rgba(255, 226, 140, 0.2);
+  color: #fff3d4;
+}
+
+/* Definition terms */
+dt { font-weight: bold; }
+
+/* Footer */
+footer { font-size: 80%; text-align: center; padding: 1px 0; }
+
+/* Map iframe */
+iframe { display: block; margin: 10px auto; }
+
+/* Fieldset */
+fieldset {
+  width: 500px;
+  margin: 20px auto;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Legend */
+legend {
+  font-style: italic;
+  color: #1a1a1a;
+  background-color: #ffd580;
+  margin: 0 10px;
+  padding: 0 5px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* Submit button */
+input[type="submit"] {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 5px;
+  background-color: #4da3ff;
+  color: #0a0a0a;
+}
+
+/* Submit hover */
+input[type="submit"]:hover {
+  background-color: #ffffff;
+  color: #0a0a0a;
+  cursor: pointer;
+}

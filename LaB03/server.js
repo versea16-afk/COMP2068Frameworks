@@ -4,9 +4,6 @@
  * Description:
  * This server uses the Connect module to handle simple calculator operations
  * (add, subtract, multiply, divide) through query parameters.
- * Example usage:
- *    http://localhost:3000/lab3?method=add&x=16&y=4
- * The server responds with the result of the operation.
  */
 
 const connect = require('connect');
