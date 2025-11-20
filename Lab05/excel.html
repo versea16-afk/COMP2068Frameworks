@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Lab 5 - JavaScript: Forms & Events Essentials
+        Page: Excel Functions
+        Student Name: Jas
+        Student ID: 200604948
+        File: excel.html
+    -->
+    <meta charset="UTF-8">
+    <title>Lab 5 - Excel Functions</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="light-theme">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="excel.html">Excel</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Excel Functions Simulator</h1>
+
+        <!-- Form for Excel-like calculations -->
+        <form id="main-form" name="mainform" data-page="excel">
+            <div class="form-row">
+                <label for="numbers">
+                    Enter your numbers separated by spaces:
+                </label>
+                <input type="text" id="numbers" name="numbers" placeholder="e.g. 23 67 98 90 56">
+            </div>
+
+            <fieldset class="form-row">
+                <legend>Excel Functions:</legend>
+                <label>
+                    <input type="radio" name="excel" id="sum" value="sum" checked>
+                    AutoSum
+                </label>
+                <label>
+                    <input type="radio" name="excel" id="avg" value="avg">
+                    Average
+                </label>
+                <label>
+                    <input type="radio" name="excel" id="max" value="max">
+                    Max
+                </label>
+                <label>
+                    <input type="radio" name="excel" id="min" value="min">
+                    Min
+                </label>
+            </fieldset>
+
+            <div class="form-buttons">
+                <button type="submit">Calculate</button>
+            </div>
+        </form>
+
+        <!-- Output area -->
+        <div id="output"></div>
+
+        <!-- Theme switch buttons (Part 7 of assignment) -->
+        <div class="theme-switcher">
+            <button type="button" id="theme-light">Light Theme</button>
+            <button type="button" id="theme-dark">Dark Theme</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>ILAC &amp; EFREI - HTML, CSS, and JavaScript Assignment - Lab 5</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

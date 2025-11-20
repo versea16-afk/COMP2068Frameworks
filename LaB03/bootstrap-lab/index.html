@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Lab 3 - Bootstrap Single Page Website
+        Student Name: Jas
+        Student ID: 200604948
+        File: index.html
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Lab – Landing Page</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous"
+    >
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    >
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="home">
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">Bootstrap Lab</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#carousel-section">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mt-5 pt-4"></div>
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <section id="hero" class="py-5 bg-light hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h1 class="display-5 fw-bold mb-3">Modern Web Development with Bootstrap</h1>
+                    <p class="lead">
+                        This fully responsive single-page website demonstrates the use of Bootstrap 5 components, layout, and design utilities.
+                    </p>
+                    <a href="#contact" class="btn btn-primary btn-lg mt-2">Sign Up</a>
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <img
+                        src="assets/images/hero-placeholder.jpg"
+                        class="img-fluid rounded shadow"
+                        alt="Hero Image"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FEATURES SECTION ===================== -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Website Features</h2>
+                <p class="text-muted">A clean and organized Bootstrap layout.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Feature 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 text-center shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-laptop fs-1 mb-3"></i>
+                            <h5>Responsive Layout</h5>
+                            <p>Automatically adjusts to mobile, tablet, and desktop screens.</p>
+                            <a href="#about" class="btn btn-outline-primary btn-sm">More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 text-center shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-layers fs-1 mb-3"></i>
+                            <h5>Modern Components</h5>
+                            <p>Navbar, cards, accordion, carousel, and more.</p>
+                            <a href="#carousel-section" class="btn btn-outline-primary btn-sm">View</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 text-center shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-code-slash fs-1 mb-3"></i>
+                            <h5>Clean Code</h5>
+                            <p>Follows proper folder structure and HTML validation rules.</p>
+                            <a href="#contact" class="btn btn-outline-primary btn-sm">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== ABOUT SECTION ===================== -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">About This Project</h2>
+                <p class="text-muted">Built for the Advanced Web Programming course.</p>
+            </div>
+
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6">
+                    <h3>Single Page Design</h3>
+                    <p>
+                        All content is on one page using Bootstrap navigation and anchor links. This improves simplicity and user flow.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="assets/images/about-layout.jpg" class="img-fluid rounded shadow-sm">
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center mb-4 mb-md-0">
+                    <img src="assets/images/about-bootstrap.jpg" class="img-fluid rounded shadow-sm">
+                </div>
+                <div class="col-md-6">
+                    <h3>Designed with Bootstrap 5</h3>
+                    <p>
+                        Includes cards, grids, spacing utilities, and modern styling elements to create a clean educational layout.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== TEAM SECTION ===================== -->
+    <section id="team" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Our Team</h2>
+                <p class="text-muted">Sample placeholder profiles for the lab.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Member 1 -->
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card text-center shadow-sm h-100">
+                        <img src="assets/images/person1.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5>Team Member</h5>
+                            <p>Frontend Developer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 2 -->
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card text-center shadow-sm h-100">
+                        <img src="assets/images/person2.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5>Team Member</h5>
+                            <p>UI/UX Designer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 3 -->
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card text-center shadow-sm h-100">
+                        <img src="assets/images/person3.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5>Team Member</h5>
+                            <p>Backend Developer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 4 -->
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card text-center shadow-sm h-100">
+                        <img src="assets/images/person4.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5>Team Member</h5>
+                            <p>Project Contributor</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CAROUSEL SECTION ===================== -->
+    <section id="carousel-section" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Gallery</h2>
+                <p class="text-muted">Showcasing project highlights.</p>
+            </div>
+
+            <div id="labCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#labCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#labCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#labCarousel" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner rounded shadow">
+                    <div class="carousel-item active">
+                        <img src="assets/images/carousel1.jpg" class="d-block w-100">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                            <h5>Hero Section</h5>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="assets/images/carousel2.jpg" class="d-block w-100">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                            <h5>Features Section</h5>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="assets/images/carousel3.jpg" class="d-block w-100">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                            <h5>Contact Section</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#labCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#labCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== ACCORDION SECTION ===================== -->
+    <section id="faq" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">FAQ</h2>
+                <p class="text-muted">Common questions about the project.</p>
+            </div>
+
+            <div class="accordion" id="labAccordion">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#q1">
+                            What is this website for?
+                        </button>
+                    </h2>
+                    <div id="q1" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            This site is created for the Bootstrap Lab 3 assignment.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q2">
+                            Which technologies were used?
+                        </button>
+                    </h2>
+                    <div id="q2" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            HTML5, CSS3, and Bootstrap 5 components.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q3">
+                            Is it responsive?
+                        </button>
+                    </h2>
+                    <div id="q3" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Yes, it scales for mobile, tablet, and large screens using responsive utilities.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q4">
+                            Can I reuse this?
+                        </button>
+                    </h2>
+                    <div id="q4" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Yes, you can reuse and customize this layout for future projects.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT SECTION ===================== -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Contact</h2>
+                <p class="text-muted">Reach out for more information.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Subject</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control" rows="4"></textarea>
+                        </div>
+                        <button class="btn btn-primary">Send</button>
+                    </form>
+                </div>
+
+                <div class="col-md-6">
+                    <h5>More Info</h5>
+                    <p>This is the contact section for the lab project.</p>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-envelope me-2"></i>example@mail.com</li>
+                        <li><i class="bi bi-geo-alt me-2"></i>Toronto, Canada</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="py-3 text-center text-white footer-bg">
+        <small>&copy; 2024 – Bootstrap Lab Project</small>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"
+    ></script>
+
+</body>
+</html>
